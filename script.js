@@ -6,5 +6,9 @@ countButton.addEventListener('click',buttonClick);
 
 function buttonClick() {
     currentNumber = currentNumber + 1;
-    textNumber.textContent = `${currentNumber}`;
+    if (currentNumber > 10) {
+        document.getElementById("btn").disabled = true;
+    } else {
+        textNumber.textContent = `${currentNumber}`;
+    }
 }
