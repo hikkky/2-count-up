@@ -18,7 +18,7 @@
             return (
                 <div>
                     <div id="number">{count}</div>
-                    <button onClick={increment}>カウントアップ</button>
+                    <button onClick={increment} disabled={count === 10}>カウントアップ</button>
                 </div>
             );
         };
